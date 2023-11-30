@@ -1,0 +1,31 @@
+use("pet_store")
+db.products.updateMany(
+    // query
+    { category: "Juguetes" },
+    // update - operators
+    {
+      $set: {
+        inventary: true
+      }
+    }
+)
+use("pet_store")
+db.products.updateMany(
+    { category: "Higiene" },
+    // update - operators
+    {
+      $set: {
+        quantity: 0
+      }
+    }
+)
+use("pet_store")
+db.products.updateMany(
+    { category: "Alimentación" },
+    // update - operators
+    {
+      $set: {
+        weitght: "0kg"
+      }
+    }
+ )
