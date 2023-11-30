@@ -1,0 +1,169 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  
+    {
+        _id: 1,
+        title: "Juguete masticable de goma",
+        price: 9.99,
+        description: "Juguete resistente y duradero para perros, ideal para masticar y jugar.",
+        category: "Juguetes",
+        image: "imagen1.jpg"
+    },
+    {
+        _id: 2,
+        title: "Cama acolchada para gatos",
+        price: 24.99,
+        description: "Cama suave y confortable para gatos, con almohada incluida.",
+        category: "Camas",
+        image: "imagen2.jpg"
+    },
+    {
+        _id: 3,
+        title: "Comedero automático para perros",
+        price: 39.99,
+        description: "Comedero programable con temporizador para alimentar a tu perro automáticamente.",
+        category: "Alimentación",
+        image: "imagen3.jpg"
+    },
+    {
+        _id: 4,
+        title: "Arnés ajustable para paseos",
+        price: 15.50,
+        description: "Arnés cómodo y ajustable para perros pequeños y medianos, ideal para paseos diarios.",
+        category: "Paseo",
+        image: "imagen4.jpg"
+    },
+    {
+        _id: 5,
+        title: "Juguete interactivo para gatos",
+        price: 12.75,
+        description: "Juguete con plumas y luces LED para entretener a tu gato durante horas.",
+        category: "Juguetes",
+        image: "imagen5.jpg"
+    },
+    {
+        _id: 6,
+        title: "Collar reflectante para perros",
+        price: 8.99,
+        description: "Collar ajustable con material reflectante para mayor visibilidad durante la noche.",
+        category: "Paseo",
+        image: "imagen6.jpg"
+    },
+    {
+        _id: 7,
+        title: "Rascador de sisal para gatos",
+        price: 29.95,
+        description: "Rascador resistente con cuerda de sisal para satisfacer el instinto de tu gato de afilar sus uñas.",
+        category: "Juguetes",
+        image: "imagen7.jpg"
+    },
+    {
+        _id: 8,
+        title: "Transportadora de viaje para mascotas",
+        price: 49.99,
+        description: "Transportadora segura y cómoda para viajar con tu mascota, aprobada por aerolíneas.",
+        category: "Viaje",
+        image: "imagen8.jpg"
+    },
+    {
+        _id: 9,
+        title: "Pelota con dispensador de comida",
+        price: 7.50,
+        description: "Pelota de goma con compartimento para snacks, ideal para estimular la actividad física de tu perro.",
+        category: "Juguetes",
+        image: "imagen9.jpg"
+    },
+    {
+        _id: 10,
+        title: "Chaleco salvavidas para perros",
+        price: 18.75,
+        description: "Chaleco flotante para perros, perfecto para actividades acuáticas y mayor seguridad en el agua.",
+        category: "Seguridad",
+        image: "imagen10.jpg"
+    },
+    {
+        _id: 11,
+        title: "Cepillo deslanador para gatos",
+        price: 11.99,
+        description: "Cepillo diseñado para eliminar el pelo suelto y reducir la formación de nudos en el pelaje de tu gato.",
+        category: "Higiene",
+        image: "imagen11.jpg"
+    },
+    {
+        _id: 12,
+        title: "Caseta de madera para exteriores",
+        price: 89.99,
+        description: "Caseta resistente a la intemperie para perros de tamaño mediano, ideal para el jardín o patio.",
+        category: "Casas",
+        image: "imagen12.jpg"
+    },
+    {
+        _id: 13,
+        title: "Collar antipulgas y garrapatas",
+        price: 14.25,
+        description: "Collar repelente de parásitos para perros y gatos, protección efectiva durante meses.",
+        category: "Higiene",
+        image: "imagen13.jpg"
+    },
+    {
+        _id: 14,
+        title: "Juguete de cuerdas para morder",
+        price: 6.49,
+        description: "Juguete interactivo con cuerdas resistentes, ideal para el juego y el cuidado dental de tu mascota.",
+        category: "Juguetes",
+        image: "imagen14.jpg"
+    },
+    {
+        _id: 15,
+        title: "Pañales desechables para perros",
+        price: 19.99,
+        description: "Pañales absorbentes y ajustables para perros pequeños y cachorros, perfectos para entrenamiento.",
+        category: "Higiene",
+        image: "imagen15.jpg"
+    },
+    {
+        _id: 16,
+        title: "Fuente de agua automática",
+        price: 34.50,
+        description: "Fuente con filtro para mantener el agua fresca y estimular a tu mascota a beber más.",
+        category: "Alimentación",
+        image: "imagen16.jpg"
+    },
+    {
+        _id: 17,
+        title: "Cuna suave para roedores",
+        price: 12.99,
+        description: "Cuna acolchada y lavable para hámsters y conejos, brinda confort en su espacio.",
+        category: "Roedores",
+        image: "imagen17.jpg"
+    },
+    {
+        _id: 18,
+        title: "Juguete de cuerda para aves",
+        price: 5.99,
+        description: "Juguete con cuerda y materiales seguros para el entretenimiento de aves pequeñas.",
+        category: "Aves",
+        image: "imagen18.jpg"
+    },
+    {
+        _id: 19,
+        title: "Champú hipoalergénico",
+        price: 8.75,
+        description: "Champú suave y sin fragancia para mascotas con piel sensible, fórmula hipoalergénica.",
+        category: "Higiene",
+        image: "imagen19.jpg"
+    },
+    {
+        _id: 20,
+        title: "Snacks de pollo deshidratado",
+        price: 3.99,
+        description: "Snacks naturales y saludables para premiar a tu mascota, sin aditivos ni conservantes.",
+        category: "Alimentación",
+        image: "imagen20.jpg"
+    }
+])
